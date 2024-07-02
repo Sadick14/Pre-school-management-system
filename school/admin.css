@@ -1,0 +1,206 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+
+/* Header Styles */
+.header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navigation Styles */
+.nav_icon {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav_icon a {
+    margin-left: 15px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.nav_icon i {
+    color: white;
+    margin-right: 5px;
+}
+
+.nav_icon:hover {
+    background-color: #d0e2ff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.nav {
+    width: 200px;
+    background-color: #1a73e8;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.nav a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Container Styles */
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Dashboard Styles */
+.DASHBOARD {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #1a73e8;
+}
+
+.DASHBOARD h1 {
+    color: #1a73e8;
+    font-weight: bolder;
+    border-bottom: 1px solid #1a73e8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.dash {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.dash .students,
+.dash .teachers,
+.dash .attendance {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: larger;
+    font-weight: bolder;
+    flex: 1;
+    color: white;
+}
+
+.dash .students {
+    background-color: #1a73e8;
+}
+
+.dash .teachers {
+    background-color: #d4a405;
+}
+
+.dash .attendance {
+    background-color: #066df3;
+}
+
+/* Analytics Styles */
+.analytics h2 {
+    color: #1a73e8;
+    border-bottom: 1px solid #1a73e8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.graph-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1a73e8;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .container1 {
+        flex-direction: column;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .dash {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dash .students,
+    .dash .teachers,
+    .dash .attendance {
+        font-size: medium;
+    }
+}
